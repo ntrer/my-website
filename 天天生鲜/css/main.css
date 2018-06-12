@@ -1,0 +1,595 @@
+
+/*设置全局字体样式*/
+body{
+	
+	font-family: "微软雅黑";
+	color: #666;
+	font-size: 12px;
+}
+
+/**************************页面头部**********************************/
+/*页面头部区域*/
+.hearder_con{
+	height: 29px;
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+}
+
+/*头部内容区域*/
+.header{
+	width: 1400px;
+	height: 29px;
+	margin: 0 auto;
+	line-height: 29px;
+}
+
+
+/*设置超链接字体颜色*/
+.user_login_link a,.user_shopping a{
+	color: #666;
+}
+
+/*设置链接移入颜色*/
+.user_login_link a:hover,.user_shopping a:hover{
+	color:#f80;
+}
+
+/*设置竖线的间距和颜色*/
+.user_login_link span,.user_shopping span{
+	margin: 0 10px;
+	color: #cecece;
+}
+
+
+/*设置用户名登录前隐藏，且不占用位置*/
+.user_name{
+	display: none;
+}
+
+/*******************************搜索区域****************************/
+
+.logo_bar{
+	width: 1400px;
+	height: 150px;
+	margin: 0 auto;
+    /*background: red;*/
+}
+
+/*设置logo图片*/
+.logo{
+	width: 151px;
+	height: 59px;
+	/*logo是浮动的，所以这里设置margin没有造成塌陷*/
+	margin: 45px 0px 0px 17px;
+}
+
+/*设置搜索框*/
+.search{
+	
+	width: 680px;
+	height: 45px;
+	border: 1px solid #37ab40;
+	margin: 55px 0 0 170px;
+	background: url(../img/icons.png)8px 12px no-repeat;
+}
+
+/*设置搜搜索栏文本*/
+.search_text{
+	width: 500px;
+	height: 45px;
+	border: 0px;
+	margin-left: 45px;
+	/*设置点击搜索框时外部的边框为None*/
+	outline: none;
+}
+
+/*设置搜索栏按钮*/
+.search_btn{
+	width: 100px;
+	height: 45px;
+	background-color: #37ab40;
+	border: 0px;
+	font: 15px/45px "微软雅黑";
+	color: #fff;
+	/*设置移入按钮后，鼠标变手的形状*/
+	cursor: pointer;
+}
+
+/*设置购物车区域*/
+.chart{
+	width:200px;
+	height:45px;
+	margin-top:55px ;
+	
+}
+/*设置购物车链接*/
+.chart a{
+	width:153px;
+	height:43px;
+	border:1px solid #ddd;
+	font:14px/38px  'Microsoft Yahei';
+	color:#37ab40;
+	text-indent:56px;
+	background:url(../img/icons.png) 17px -43px no-repeat #f7f7f7;
+}
+
+/*设置购物车数量*/
+.chart span{
+	width: 45px;
+	height: 45px;
+	background-color: #f80;
+	font: bold 18px/45px "微软雅黑";
+	color: #fff;
+	text-align: center;
+}
+
+/*******************************菜单区域****************************/
+
+/*设置菜单栏线*/
+.sub_menu_bar{
+	height: 45px;
+	border-bottom: 2px solid #37ab40;
+}
+/*设置菜单栏*/
+.sub_menu{
+	width: 1400px;
+	height: 45px;
+	margin: 0px auto;
+}
+
+/*设置菜单标题*/
+.sub_menu h1{
+	width: 160px;
+	height: 45px;
+	background-color:#37ab40 ;
+	font: 18px/45px "微软雅黑";
+	color: #fff;
+	text-align: center;
+}
+
+/*设置3个菜单列表*/
+.sub_menu ul{
+	overflow: hidden;
+}
+
+/*设置列表选项*/
+.sub_menu li{
+	float: left;
+	height: 25px;
+	padding: 0 25px;
+	/*设置左边的边框*/
+	border-left:1px solid #ddd ;
+	/*让最左边的边框隐藏*/
+	margin-left: -1px;
+	/*因为不是设置文字的居中，是列表的居中，所以要通过margin来设置*/
+	margin-top: 10px;
+}
+
+.sub_menu li a{
+	font: 18px "微软雅黑";
+	color: #666;
+}
+
+.sub_menu li a:hover{
+	color: #f80;
+}
+
+/*********************具体菜单****************************/
+
+.center_con{
+	width:1400px;
+	height:270px;
+	margin:0 auto;
+	
+}
+
+/*具体菜单区域*/
+.center_con .main_menu{
+	width:160px;
+	height:270px;
+	overflow:hidden;
+}
+
+/*设置具体菜单的选项*/
+.center_con .main_menu li{
+	/*设置了border，所以宽高要相应减少*/
+	width:158px;
+	height:44px;
+	border:1px solid #eee;
+	margin-top:-1px;
+	background:url(../img/icons.png) 166px -385px no-repeat;
+}
+
+.center_con .main_menu li a{
+	/*将a转为块元素。来给它设置宽高*/
+	display:block;
+	width:198px;
+	height:44px;
+	text-align: center;
+	font:18px/44px 'Microsoft Yahei';
+	color:#333;
+	background:url(../img/icons.png)  no-repeat;
+	
+}
+
+/*设置每个选项的小图标*/
+.center_con .main_menu li .fruit{
+	background-position:23px -90px;
+
+}
+
+.center_con .main_menu li .seafood{
+	background-position:21px -140px;
+
+}
+
+.center_con .main_menu li .meat{
+	background-position:21px -190px;
+
+}
+
+.center_con .main_menu li .egg{
+	background-position:23px -240px;
+
+}
+
+.center_con .main_menu li .vegetable{
+	background-position:23px -290px;
+
+}
+
+.center_con .main_menu li .ice{
+	background-position:23px -338px;
+
+}
+
+/*********************轮播图区域****************************/
+
+.slide_con{
+	width:760px;
+	height:270px;
+	/*因为banner里的图片要移动定位,所以开启父元素的定位*/
+	position:relative;
+	/*裁剪溢出的内容*/
+	overflow: hidden;
+}
+
+.slide{
+	position:relative;
+	left:0;
+	top:0;
+	width:760px;
+	height:270px;
+}
+
+.slide_con .slide li{
+	width:760px;
+	height:270px;
+	position:absolute;
+	left:0;
+	top:0
+}
+
+/*设置轮播图上的箭头*/
+.prev,.next{
+	width: 15px;
+	height: 23px;
+	/*绝对定位是相对于离他最近的开启了定位的祖先元素进行定位的
+	 * （一般情况，开启了子元素的绝对定位都会同时开启父元素的相对定位）
+	 * 
+	 * 绝对定位会使元素提升一个层级,从而可以使箭头在轮播图上面显示
+	 */
+	position: absolute;
+	left: 11px;
+	top: 122px;
+	/*因为不是用a标签，但是想在滑入时显示手的形状*/
+	cursor: pointer;
+	background: url(../img/icons.png) -1px -451px no-repeat;
+}
+
+/*设置右箭头*/
+.next{
+	left: 732px;
+	background: url(../img/icons.png) -1px -501px no-repeat;
+}
+
+/*绝对定位会改变元素的性质，
+*绝对定位和固定定位的块元素和行内元素会自动转化为行内块元素
+* 行内块元素如果没有设置宽高，宽高由内容决定
+*/
+
+/*设置轮播图点的区域*/
+.points{
+	width:100%;
+	height:11px;
+	position:absolute;
+	left:0;
+	top:250px;
+	text-align:center;
+}
+
+/*设置轮播图的点*/
+.points li{
+	width: 11px;
+	height: 11px;
+	/*将块元素转为内联块元素，可以使元素大小由内容决定，
+	* 而不是独占一行*/
+	display: inline-block;
+    background-color:#cecece;
+	margin:0 5px;
+	border-radius:50%;	
+	cursor: pointer;
+}
+
+/*设置被激活的点的颜色*/
+.points li.active{
+	background-color:#9f9f9f;
+}
+
+.adv{
+	width: 240px;
+	height: 270px;
+}
+
+/*  解决图片下方出现3像素空白的bug   */
+.adv a img{
+	display:block;
+}
+
+/*********************推荐列表区域****************************/
+
+
+.common_model{
+	width: 1400px;
+	height:340px;
+	margin:18px auto 0;
+}
+
+.common_model .common_title{
+	height:38px;
+	line-height: 38px;
+	border-bottom:2px solid #42ad46;
+}
+
+.common_model h3{
+	font: bold 16px/38px "微软雅黑";
+	color:#37ab40;
+}
+
+.common_model .common_title ul{
+	margin: 0 20px;
+}
+
+.common_model .common_title li{
+	/*让Li浮动，横向排列*/
+	float:left;
+	margin: 0 10px;
+}
+
+.common_model .common_title li a{
+	color:#666;
+	font-size:14px;
+}
+
+.common_model .common_title .more{
+	color:#666;
+}
+
+
+.common_model .common_goods_list{
+	width:1400px;
+	height:300px;
+}
+
+.common_model .common_goods_list .banner{
+	width:200px;
+	height:300px;
+}
+.common_model .common_goods_list .goods_list{
+	width:1200px;
+	height:300px;
+}
+
+.common_model .common_goods_list .goods_list li{
+	width:239px;
+	height:299px;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #ededed;
+	/*让子元素都居中*/
+	text-align: center;
+	float:left;
+}
+
+
+
+.common_model .common_goods_list .goods_list h4{
+	height:52px;
+	font:14px/52px 'Microsoft Yahei';
+	color:#666;	
+}
+
+.common_model .common_goods_list .goods_list p{
+	height:52px;
+	font:bold 20px/52px 'Microsoft Yahei';
+	color:#c40000;
+}
+
+
+.common_model .common_goods_list .goods_list li:hover{
+	width:238px;
+	height:298px;
+	border:1px solid #ff0;
+}
+
+/*********************公司信息区域****************************/
+
+.footer{
+	height: 145px;
+	border-top:2px solid #4ab14e;
+	margin-top:30px;
+	text-align: center;
+}
+
+.footer .links{
+	margin-top: 40px;
+
+}
+
+.footer.links a{
+	color:#4e4e4e;
+}
+
+.footer .links a:hover{
+	color:#f80;
+}
+
+.footer .links span{
+	color:#4e4e4e;
+	margin:0 10px;
+}
+
+.footer p{
+	margin-top:10px ;
+	line-height: 27px;
+	color:#4e4e4e;
+}
+
+/*********************登录页面区域****************************/
+.login_header{
+	width:1200px;
+	height:133px;
+	margin:0 auto;
+}
+
+/*登录页面logo*/
+.login_header a{
+	display:block;
+	width:193px;
+	height:76px;
+	/*logo是浮动的，所以这里设置margin没有造成塌陷*/
+	margin-top:28px;
+}
+
+/*页面内容位置*/
+.login_form_con{
+	height:480px;
+	background-color:#518e17;
+}
+
+.login_form{
+	width:1200px;
+	height:482px;
+	margin:0 auto;
+    /*设置子元素文字水平居中*/
+	text-align:center;
+}
+
+/*页面背景图片设置*/
+.login_form .login_banner{
+	margin:92px 0 0 15px;
+}
+
+/*页面标语设置*/
+.login_form_con .slogan{
+	color:#fff;
+	font-size:30px;
+	width:30px;
+	height:300px;
+	line-height:36px;
+	margin:87px 0 0 174px;
+}
+
+/*设置登录区域*/
+.login_form_con .form_input_con{
+	width:368px;
+	height:398px;
+	background-color:#fff;
+	border:1px solid #c6c6c5;
+	margin:50px 0 0 100px;
+	
+}
+
+/*登录标题*/
+.form_input_con .form_title{
+	width:308px;
+	height:69px;
+	border-bottom:1px solid #e0e0e0;
+	margin:0 auto;
+
+}
+
+.form_title h1{
+	/*让其不占据一行*/
+	/*浮动成为行内块元素，如果没有设置宽高，宽高由内容决定*/
+	float: left;
+	font:bold 24px/70px 'Microsoft Yahei';
+	color:#a8a8a8;
+	margin-left:44px;
+}
+
+.form_title a{
+	/*浮动成为行内块元素，如果没有设置宽高，宽高由内容决定*/
+	float:left;
+	width:100px;
+	height:16px;
+	font:16px/16px 'Microsoft Yahei';
+	color:#5fb42a;
+	text-indent:25px;
+	background:url(../img/icons.png) 0px -551px no-repeat;
+	margin:33px 0 0 36px;
+	
+}
+
+/*登录表单*/
+.form_input_con form{
+	width:308px;
+	height:221px;
+	margin:20px auto 0;
+}
+
+/*设置每个输入框包含底部间距的总共的大小*/
+.form_input_con form .form_group{
+	width:308px;
+	height:68px;
+}
+
+/*设置每个输入框，不包含底部间距*/
+ .form_group .input_txt,.form_group .input_pwd{
+ 	width:306px;
+ 	height:38px;
+ 	border:1px solid #e0e0e0;
+ 	outline:none;
+ 	background:url(../img/icons.png) 275px -592px no-repeat #f8f8f8;
+ 	text-indent:10px;
+ }
+ 
+/*设置密码框的图片*/
+ .form_group .input_pwd{
+ 	background-position:275px -642px;
+ }
+ 
+ /*设置记住用户名*/
+ .form_group .input_check{
+	margin:2px 10px 0 0;
+}
+
+/*设置忘记密码*/
+.form_group .find_pass{
+	color:#4b4b4b;
+}
+
+.form_group .find_pass:hover{
+	color:#f80;
+}
+
+/*设置登录按钮*/
+.input_sub{
+	width:308px;
+	height:40px;
+	background-color:#47aa34;
+	border:0px;
+	font:24px/40px 'Microsoft Yahei';
+	color:#fff;
+	cursor:pointer;
+
+}
